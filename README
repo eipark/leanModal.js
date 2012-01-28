@@ -1,3 +1,7 @@
 A super simple JQuery plugin for modal windows. works with your CSS.
 
 Built for all the short dialogs, alerts, panels and such associated with an app, that you may want to handle in a modal window. Designed to handle hidden content, and doesn't apply any styles to the target element, other than for displaying and positioning.
+
+Ernie's Changes:
+- Window is placed with fixed CSS initially, then its position from the top of the page is calculated so it can be placed absolutely so you can scroll to see big boxes.
+- Attach a class called .leanModal_box to the outermost element that will be opened with leanModal. Then if you have nested leanModals, the ones opened earlier will be closed before new ones are opened

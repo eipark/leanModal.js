@@ -21,6 +21,8 @@
               
               	var modal_id = $(this).attr("href");
 
+        $(".leanModal_box").css({ 'display' : 'none' });
+
 				$("body").append(overlay);
                 
 				$("#lean_overlay").click(function() { 
@@ -43,7 +45,6 @@
         			'left' : 50 + '%',
         			'margin-left' : -(modal_width/2) + "px",
         			'top' : o.top + "px"
-        		
         		});
 
             var top_position = $(modal_id).offset().top + "px";
@@ -67,7 +68,7 @@
         		$(modal_id).css({ 'display' : 'none' });
 			
 			}
-    
+
         }
     });
      
