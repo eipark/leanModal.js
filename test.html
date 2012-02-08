@@ -1,0 +1,49 @@
+<html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="jquery.leanModal.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $("a[rel*=leanModal]").leanModal();
+    });
+  </script>
+  <style>
+    #lean_overlay {
+        position: fixed;
+        z-index:100;
+        top: 0px;
+        left: 0px;
+        height:100%;
+        width:100%;
+        background: #000;
+        display: none;
+    }
+
+    #overlay { 
+      display: none;
+      width: 400px;
+      height: 1900px;
+      background: #fff;
+      border: 1px solid #000;
+    }
+
+    .modal_close {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      display: block;
+      width: 14px;
+      height: 14px;
+      background: url(modal_close.png);
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <a rel="leanModal" href="#overlay">Link</a>
+  <div id="overlay">
+    <a class="modal_close" href="#"></a>
+    Thisis theoverlay
+  </div>
+</body>
+</html>
