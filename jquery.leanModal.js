@@ -27,6 +27,7 @@
         $(".leanModal_box").css({ 'display' : 'none' });
 
 				$("body").append(overlay);
+        $(".leanModal_box").append("<a class=\"modal_close\" href=\"#\">&#10006;</a>");
 
 				$("#lean_overlay").click(function() { 
                      close_modal(modal_id);                    
